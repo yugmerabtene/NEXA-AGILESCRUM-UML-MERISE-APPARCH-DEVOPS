@@ -235,3 +235,66 @@ Comprendre les fondements de l’UML (Unified Modeling Language) et maîtriser l
 * **TP2** : Comparer deux architectures applicatives (MVC vs Microservices) selon un cas donné
 * **TP3** : Schéma d’architecture d’une application déployée avec des microservices (diagramme, dépendances, flux API)
 * **TP4** : Simulation de communication entre services avec Postman ou FastAPI
+
+Parfait, voici une proposition de **syllabus structuré pour un CHAPITRE-04 – Architecture Applicative : MVC et Microservices**. Ce chapitre vise à introduire les grands modèles d’architecture utilisés dans les applications modernes.
+
+---
+
+## 🎓 CHAPITRE-04 – Architecture Applicative : MVC & Microservices
+
+### 🎯 Objectifs pédagogiques :
+
+* Comprendre les principes d’organisation d’une application logicielle
+* Identifier les différences entre architecture monolithique, MVC et microservices
+* Appliquer les principes d’une architecture adaptée aux besoins d’un projet
+* Préparer le terrain pour le développement backend et frontend structuré
+
+---
+
+#### 1. Introduction à l’architecture logicielle
+
+* Définition d’une architecture logicielle
+* Pourquoi structurer une application ?
+* Critères de choix : scalabilité, maintenabilité, découplage, performance
+* Comparaison des grandes familles (Monolithique, N-Tiers, SOA, Microservices)
+
+#### 2. Architecture MVC (Model - View - Controller)
+
+* Principe du modèle MVC
+* Rôle de chaque couche :
+
+  * **Model** : logique métier, accès aux données
+  * **View** : interface utilisateur
+  * **Controller** : gestion des requêtes et coordination
+* Illustration avec des frameworks : Spring (Java), Django (Python), Laravel (PHP)
+* Avantages et limites
+* **TP** : Décomposer une application CRUD en MVC
+
+#### 3. Architecture en couches (Layered Architecture)
+
+* Séparation en couches : présentation, métier, données
+* Relation entre MVC et architecture en couches
+* Respect des responsabilités et découplage des modules
+* **TP** : Définir les couches d’une application de gestion d’utilisateur
+
+#### 4. Architecture Microservices
+
+* Définition et principes fondamentaux
+* Services indépendants, communication via API (REST/gRPC), base de données propre à chaque service
+* Conteneurisation (Docker), orchestrateurs (Kubernetes)
+* Exemple typique : Auth, Users, Orders, Payments...
+* Comparaison : Monolithique vs Microservices
+* Défis : transactions distribuées, communication, monitoring
+* **TP** : Modéliser un système e-commerce en microservices
+
+---
+
+### 🔧 Travaux pratiques
+
+* **TP1** : Représenter une architecture MVC et associer les composants
+* **TP2** : Comparer deux architectures applicatives (MVC vs Microservices) selon un cas donné
+* **TP3** : Schéma d’architecture d’une application déployée avec des microservices (diagramme, dépendances, flux API)
+* **TP4** : Simulation de communication entre services avec Postman ou FastAPI
+
+---
+

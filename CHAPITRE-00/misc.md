@@ -1,0 +1,3 @@
+NORMES ET ISO : 
+
+https://drive.google.com/file/d/1hzVlMA6aT9CvIexCr_Kablx-w9y_d47C/view?usp=drive_link, https://drive.google.com/file/d/1b6TDX_6MAfCESZx5n4VJxl0xe03fpG9f/view?usp=drive_link, https://docs.google.com/document/d/1-ob-Cta8Qe8foqljPDwVc92jfw_ZpD94/edit?usp=drive_link&ouid=102659018214458918259&rtpof=true&sd=true, https://docs.google.com/document/d/1n-9PQgZvOL6merAeiJXu81266jmW1_nY/edit?usp=drive_link&ouid=102659018214458918259&rtpof=true&sd=true, https://drive.google.com/file/d/19jyO0-AFG3IAQeuT2ceWnAPvaxRW4dcK/view?usp=drive_link, https://drive.google.com/file/d/1w7LZjcBRwx--Tkmlh1_75c9q5ThBbzRV/view?usp=drive_link, https://drive.google.com/file/d/13d-BjShHD-ZjcbqWhR2eGpVbaJK0kkCt/view?usp=drive_link

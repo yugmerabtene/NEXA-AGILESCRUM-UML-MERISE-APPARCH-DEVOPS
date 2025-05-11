@@ -117,7 +117,7 @@ Comprendre les fondements de l’UML (Unified Modeling Language) et maîtriser l
 * Associations, héritage, agrégation, composition
 * Multiplicités, visibilités, types
 * Liens avec les autres diagrammes (Use Case → Classe, Séquence → Classe)
-* **TP** : Modéliser les classes d’un système de gestion de bibliothèque
+* **TP** : Modéliser les classes d’un mini projet.
 
 ---
 

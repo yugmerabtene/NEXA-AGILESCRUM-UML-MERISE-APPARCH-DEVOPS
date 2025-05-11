@@ -1,4 +1,4 @@
-## 🎓 CHAPITRE-01 – Introduction à l’UML et aux principaux diagrammes
+## 🎓 CHAPITRE-02 – Introduction à l’UML et aux principaux diagrammes
 
 ### 🎯 Objectif pédagogique :
 

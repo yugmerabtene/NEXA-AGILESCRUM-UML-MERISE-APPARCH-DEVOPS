@@ -55,8 +55,8 @@
 
 * **TP1** : Lecture commentée du Manifeste Agile et débat en groupe
 * **TP2** : Simulation d’un projet en Scrum sur 2 sprints (avec rôles attribués à chaque étudiant)
-* **TP3** : Atelier de rédaction de User Stories (format : *En tant que... Je veux... afin de...*)
-* **TP4** : Élaboration d’un Product Backlog et définition d’une DoD
+* **TP3** : Élaboration d’un Product Backlog et définition d’une DoD
+* **TP4** : Atelier de rédaction de Epic, Features, User Stories (format : *En tant que... Je veux... afin de...*)
 
 ---
 

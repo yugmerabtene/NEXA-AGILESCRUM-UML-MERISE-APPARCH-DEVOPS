@@ -8,9 +8,6 @@
 * Préparer à la certification Scrum (PSM I ou équivalent)
 
 ---
-
-### 🗂 Plan détaillé du chapitre :
-
 #### 1. Introduction à l’agilité
 
 * Origine : contexte historique et limites des méthodes traditionnelles (cycle en V, waterfall)

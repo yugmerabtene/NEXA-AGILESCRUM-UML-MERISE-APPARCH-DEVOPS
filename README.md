@@ -240,61 +240,133 @@ Parfait, voici une proposition de **syllabus structuré pour un CHAPITRE-04 – 
 
 ---
 
-## 🎓 CHAPITRE-04 – Architecture Applicative : MVC & Microservices
-
-### 🎯 Objectifs pédagogiques :
-
-* Comprendre les principes d’organisation d’une application logicielle
-* Identifier les différences entre architecture monolithique, MVC et microservices
-* Appliquer les principes d’une architecture adaptée aux besoins d’un projet
-* Préparer le terrain pour le développement backend et frontend structuré
+Excellent choix pour un CHAPITRE-05, voici un **syllabus complet sur les tests unitaires et la couverture de tests**, indispensable pour garantir la qualité du code dans tout projet professionnel.
 
 ---
 
-#### 1. Introduction à l’architecture logicielle
+## 🎓 CHAPITRE-05 – Tests unitaires et couverture de tests
 
-* Définition d’une architecture logicielle
-* Pourquoi structurer une application ?
-* Critères de choix : scalabilité, maintenabilité, découplage, performance
-* Comparaison des grandes familles (Monolithique, N-Tiers, SOA, Microservices)
+### 🎯 Objectifs pédagogiques :
 
-#### 2. Architecture MVC (Model - View - Controller)
+* Comprendre l’intérêt et les principes fondamentaux des tests unitaires
+* Apprendre à écrire des tests efficaces, maintenables et automatisés
+* Mesurer la couverture de tests et interpréter les résultats
+* Utiliser des frameworks de tests adaptés selon les langages (JUnit, PyTest, etc.)
 
-* Principe du modèle MVC
-* Rôle de chaque couche :
+---
 
-  * **Model** : logique métier, accès aux données
-  * **View** : interface utilisateur
-  * **Controller** : gestion des requêtes et coordination
-* Illustration avec des frameworks : Spring (Java), Django (Python), Laravel (PHP)
-* Avantages et limites
-* **TP** : Décomposer une application CRUD en MVC
+#### 1. Introduction au test logiciel
 
-#### 3. Architecture en couches (Layered Architecture)
+* Pourquoi tester ?
+* Types de tests : unitaires, d’intégration, fonctionnels, E2E
+* Cycle de vie des tests dans un projet (TDD, BDD)
+* Bonnes pratiques générales
 
-* Séparation en couches : présentation, métier, données
-* Relation entre MVC et architecture en couches
-* Respect des responsabilités et découplage des modules
-* **TP** : Définir les couches d’une application de gestion d’utilisateur
+#### 2. Les tests unitaires
 
-#### 4. Architecture Microservices
+* Définition : tester une unité (fonction, méthode) indépendamment
+* Ce qu’on teste / Ce qu’on ne teste pas
+* Cas de test : données valides, limites, erreurs
+* Structure d’un test : *Given / When / Then*
+* **TP** : Écrire des tests simples sur des fonctions métiers (addition, tri, etc.)
 
-* Définition et principes fondamentaux
-* Services indépendants, communication via API (REST/gRPC), base de données propre à chaque service
-* Conteneurisation (Docker), orchestrateurs (Kubernetes)
-* Exemple typique : Auth, Users, Orders, Payments...
-* Comparaison : Monolithique vs Microservices
-* Défis : transactions distribuées, communication, monitoring
-* **TP** : Modéliser un système e-commerce en microservices
+#### 3. Frameworks de tests (par langage)
+
+* **Java** : JUnit 5, AssertJ, Mockito
+* **Python** : unittest, pytest, mock
+* **JavaScript** : Jest, Mocha
+* **PHP** : PHPUnit
+* Setup, assertions, organisation des tests
+
+#### 4. Gestion des dépendances dans les tests
+
+* Mocks, Stubs, Fakes
+* Injection de dépendances pour faciliter les tests
+* Test des exceptions et comportements anormaux
+* **TP** : Utilisation de mocks pour isoler les composants
+
+#### 5. La couverture de tests
+
+* Définition : pourcentage du code exécuté par les tests
+* Types de couverture : lignes, branches, chemins, conditions
+* Mesure avec outils (ex. : JaCoCo, Coverage.py, Istanbul)
+* Limites : une couverture élevée ≠ qualité des tests
+* **TP** : Générer un rapport de couverture et analyser les zones non couvertes
+
+#### 6. Intégration continue et automatisation des tests
+
+* Tests dans un pipeline CI/CD
+* Exécution automatique des tests à chaque push / pull request
+* Badge de couverture et seuils qualité
+* **TP** : Mise en place d’un pipeline simple avec GitHub Actions ou GitLab CI
 
 ---
 
 ### 🔧 Travaux pratiques
 
-* **TP1** : Représenter une architecture MVC et associer les composants
-* **TP2** : Comparer deux architectures applicatives (MVC vs Microservices) selon un cas donné
-* **TP3** : Schéma d’architecture d’une application déployée avec des microservices (diagramme, dépendances, flux API)
-* **TP4** : Simulation de communication entre services avec Postman ou FastAPI
+* **TP1** : Tests unitaires sur une classe de gestion d’utilisateurs (CRUD)
+* **TP2** : Ajout de mocks pour un service dépendant d’une API externe
+* **TP3** : Rapport de couverture de tests et actions correctives
+* **TP4** : Intégration des tests dans un dépôt Git avec automatisation
 
 ---
 
+## 🎓 CHAPITRE-06 – DevOps et pipeline CI/CD : tests, build et déploiement
+
+### 🎯 Objectifs pédagogiques :
+
+* Comprendre la culture DevOps et ses bénéfices dans le cycle de vie logiciel
+* Savoir configurer un pipeline CI/CD complet et sécurisé
+* Automatiser les tests, la compilation, l’intégration et le déploiement
+* Maîtriser les outils principaux : GitHub Actions, GitLab CI, Jenkins, Docker...
+
+---
+
+### 🗂 Plan détaillé du chapitre :
+
+#### 1. Introduction au DevOps
+
+* Définition et objectifs : collaboration Dev + Ops
+* Cycle de vie logiciel en DevOps
+* Comparaison DevOps vs méthodes traditionnelles
+* Outils phares de l’écosystème (CI/CD, conteneurs, infra as code...)
+
+#### 2. Intégration Continue (CI)
+
+* Déclencheurs (push, PR, merge)
+* Phase de **tests automatisés** : unitaires, intégration, sécurité (linters)
+* Génération de rapports (couverture, logs)
+* Outils : GitHub Actions, GitLab CI, Jenkins
+* **TP** : Créer un job de test avec badge de succès
+
+#### 3. Build automatisé
+
+* Compilation et packaging du code (Java, Node, Python...)
+* Résolution des dépendances
+* Versioning et artéfacts
+* Outils : Maven, Gradle, npm, Docker Build
+* **TP** : Générer automatiquement une image Docker avec version taguée
+
+#### 4. Livraison Continue (CD)
+
+* Déploiement automatisé : staging, production
+* Déploiement sur VPS, Cloud, containers (Docker, K8s)
+* Stratégies de déploiement : blue/green, rolling update, canary
+* Sécurisation des déploiements (SSH, secrets, GitOps)
+* **TP** : Déploiement automatique sur un serveur après merge
+
+#### 5. Monitoring et feedback
+
+* Logs, erreurs, métriques post-déploiement
+* Outils : Prometheus, Grafana, ELK, Sentry
+* Alertes et rollback automatisé (selon seuils critiques)
+* **TP** : Intégrer une alerte basique ou un rapport de logs
+
+---
+
+### 🔧 Travaux pratiques
+
+* **TP1** : Écriture d’un pipeline CI/CD simple (YAML) avec tests et build
+* **TP2** : Déploiement automatique d’une API ou app web sur un VPS avec Docker
+* **TP3** : Utilisation de secrets pour sécuriser un pipeline
+* **TP4** : Mise en place d’un badge de statut + rapport de couverture de test

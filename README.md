@@ -236,12 +236,6 @@ Comprendre les fondements de l’UML (Unified Modeling Language) et maîtriser l
 * **TP3** : Schéma d’architecture d’une application déployée avec des microservices (diagramme, dépendances, flux API)
 * **TP4** : Simulation de communication entre services avec Postman ou FastAPI
 
-Parfait, voici une proposition de **syllabus structuré pour un CHAPITRE-04 – Architecture Applicative : MVC et Microservices**. Ce chapitre vise à introduire les grands modèles d’architecture utilisés dans les applications modernes.
-
----
-
-Excellent choix pour un CHAPITRE-05, voici un **syllabus complet sur les tests unitaires et la couverture de tests**, indispensable pour garantir la qualité du code dans tout projet professionnel.
-
 ---
 
 ## 🎓 CHAPITRE-05 – Tests unitaires et couverture de tests
@@ -321,8 +315,6 @@ Excellent choix pour un CHAPITRE-05, voici un **syllabus complet sur les tests u
 * Maîtriser les outils principaux : GitHub Actions, GitLab CI, Jenkins, Docker...
 
 ---
-
-### 🗂 Plan détaillé du chapitre :
 
 #### 1. Introduction au DevOps
 

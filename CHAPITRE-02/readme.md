@@ -270,6 +270,7 @@ public class Main {
 
 ### 1. Association
 Une association indique une relation structurelle entre deux classes, signifiant que des objets d'une classe sont liés à des objets d'une autre classe. Elle est représentée par une ligne continue entre les classes concernées. Les associations peuvent être unidirectionnelles (avec une flèche indiquant la direction) ou bidirectionnelles (sans flèche).
+![image](https://github.com/user-attachments/assets/4debc238-b973-4a72-83c0-21c62ba4ea79)
 
 **Exemple :**
 ```plaintext

@@ -78,8 +78,6 @@ Comprendre les fondements de l’UML (Unified Modeling Language) et maîtriser l
 
 ---
 
-### 🗂 Plan du chapitre :
-
 #### 1. Introduction à UML
 
 * Historique et contexte d’apparition

@@ -323,7 +323,110 @@ La multiplicité précise le nombre d'instances d'une classe pouvant être assoc
 ```
 Cela signifie qu'une instance de la Classe A peut être associée à plusieurs instances de la Classe B, mais chaque instance de la Classe B est associée à une seule instance de la Classe A.
 
-Pour une illustration complète de ces relations avec leurs notations UML, vous pouvez consulter le [guide complet sur les diagrammes de classes UML](https://www.cybermedian.com/fr/a-comprehensive-guide-to-uml-class-diagram/).   
+Pour une illustration complète de ces relations avec leurs notations UML, vous pouvez consulter le [guide complet sur les diagrammes de classes UML](https://www.cybermedian.com/fr/a-comprehensive-guide-to-uml-class-diagram/).      
+
+
+
+### 🔁 **Association Réflexive en UML**
+
+---
+
+### 🔹 Définition :
+
+Une **association réflexive** (ou **auto-association**) en UML est une **relation entre une classe et elle-même**.
+
+> Cela signifie qu'un objet peut être en relation avec **un ou plusieurs autres objets** de **la même classe**.
+
+---
+
+### 🔸 Cas d’usage typique :
+
+* Un **employé** peut **manager** d'autres **employés**.
+* Un **dossier** peut contenir d'autres **dossiers**.
+* Une **personne** peut avoir une **relation familiale** avec une autre personne (même classe).
+
+---
+
+### 📐 Exemple UML (diagramme de classes) :
+
+```plantuml
+@startuml
+class Employe {
+  - nom : String
+}
+
+Employe "1" -- "0..*" Employe : manage
+@enduml
+```
+
+👉 Ici :
+
+* Chaque `Employe` peut **manager plusieurs employés**
+* Chaque `Employe` peut être **managé par un seul autre employé**
+
+---
+
+### 💻 Exemple en Java :
+
+```java
+import java.util.List;
+import java.util.ArrayList;
+
+public class Employe {
+    private String nom;
+    private Employe manager;
+    private List<Employe> subordonnes;
+
+    public Employe(String nom) {
+        this.nom = nom;
+        this.subordonnes = new ArrayList<>();
+    }
+
+    public void setManager(Employe manager) {
+        this.manager = manager;
+        manager.ajouterSubordonne(this);
+    }
+
+    public void ajouterSubordonne(Employe e) {
+        subordonnes.add(e);
+    }
+
+    public void afficherStructure() {
+        System.out.println("Employé : " + nom);
+        if (manager != null) {
+            System.out.println("  Manager : " + manager.nom);
+        }
+        if (!subordonnes.isEmpty()) {
+            System.out.println("  Subordonnés : ");
+            for (Employe e : subordonnes) {
+                System.out.println("    - " + e.nom);
+            }
+        }
+    }
+}
+```
+
+### 🧪 Utilisation :
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Employe alice = new Employe("Alice");
+        Employe bob = new Employe("Bob");
+        Employe charlie = new Employe("Charlie");
+
+        bob.setManager(alice);
+        charlie.setManager(alice);
+
+        alice.afficherStructure();
+        bob.afficherStructure();
+    }
+}
+```
+
+---
+
+
 
 
 ## Documentation : 
